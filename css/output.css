@@ -781,6 +781,7 @@ video {
 
 body {
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 .hero{
@@ -893,6 +894,65 @@ body {
 
 .navbar-menu li a:hover {
   color: yellow;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 8;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the overlay */
+
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.phone-menu {
+  width: 50%;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  right: -50%;
+  z-index: 9;
+  padding: 2rem;
+  transition: .4s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-menu .phone-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.phone-menu .close {
+  align-self: flex-start;
+  position: absolute;
+  top: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-image: url(../images/cross-close-svgrepo-com.svg);
+}
+
+.phone-menu.active {
+  right: 0;
 }
 
 .hover\:bg-gray-800:hover {
