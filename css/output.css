@@ -819,6 +819,7 @@ body {
   position: fixed;
   display: flex;
   justify-content: center;
+  transition: .3s;
 }
 
 .preloader img {

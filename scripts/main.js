@@ -5,6 +5,7 @@ const closeBtn = document.querySelector(".close");
 const preloader = document.querySelector('.preloader');
 
 window.onload = function () {
+  preloader.style.visibility = 'hidden';
   preloader.style.display = 'none';
 }
 
