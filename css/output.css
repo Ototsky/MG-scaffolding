@@ -784,7 +784,7 @@ body {
   position: relative;
 }
 
-.hero{
+.hero {
   height: 100vh;
   background-image: url(../images/shark-ovski-MpqeXMT786o-unsplash.jpg);
   background-size: cover;
@@ -794,7 +794,7 @@ body {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -809,6 +809,20 @@ body {
   max-width: 1600px;
   margin-inline: auto;
   padding: 2rem 4rem;
+}
+
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.preloader img {
+  width: 100px;
 }
 
 .header .container nav {
@@ -830,7 +844,7 @@ body {
   align-items: center;
 }
 
-@media (max-width:960px) {
+@media (max-width: 960px) {
   .header div.container {
     width: 100%;
     padding: 2.5rem 2rem;
@@ -852,7 +866,7 @@ body {
 .burger-menu {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
   display: none;
 }
 
@@ -875,7 +889,7 @@ body {
 }
 
 .navbar-menu li a::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -924,7 +938,7 @@ body {
   right: -50%;
   z-index: 9;
   padding: 2rem;
-  transition: .4s all;
+  transition: 0.4s all;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -981,4 +995,5 @@ body {
     line-height: 1;
   }
 }
+
 
