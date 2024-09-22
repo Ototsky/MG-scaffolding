@@ -703,6 +703,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1046,6 +1051,12 @@ body {
   right: 0;
 }
 
+@media screen and (max-width: 768px) {
+  section .container {
+    text-align: center;
+  }
+}
+
 /* .about-us {
   background-color: #1F1F1F;
 }
@@ -1093,5 +1104,10 @@ body {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

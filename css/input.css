@@ -256,6 +256,13 @@ body {
 }
 
 
+
+@media screen and (max-width: 768px) {
+  section .container {
+    text-align: center;
+  }
+}
+
 /* .about-us {
   background-color: #1F1F1F;
 }
