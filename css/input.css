@@ -73,6 +73,9 @@
   font-weight: 900;
   font-style: normal;
 }
+*{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -253,3 +256,21 @@ body {
 }
 
 
+/* .about-us {
+  background-color: #1F1F1F;
+}
+.about-us .container h1 {
+  color: #F0F0F0;
+  text-transform: uppercase;
+}
+.about-us .container .cards .card {
+  display: flex;
+  gap: 5rem;
+  min-width: 750px;
+}
+.about-us .container .cards .card img{
+  max-width: 100%;
+  width: 35%;
+  border-radius: 8px;
+  border: 1px solid #facc15;
+} */
