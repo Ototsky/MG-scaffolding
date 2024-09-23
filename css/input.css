@@ -84,7 +84,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url(../images/shark-ovski-MpqeXMT786o-unsplash.jpg);
+  background-image: url(../images/shark-ovski-MpqeXMT786o-unsplash.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -261,23 +261,16 @@ body {
   section .container {
     text-align: center;
   }
+  .services div.grid-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
-/* .about-us {
-  background-color: #1F1F1F;
+.services .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: center;  
+  gap: 2rem;
 }
-.about-us .container h1 {
-  color: #F0F0F0;
-  text-transform: uppercase;
-}
-.about-us .container .cards .card {
-  display: flex;
-  gap: 5rem;
-  min-width: 750px;
-}
-.about-us .container .cards .card img{
-  max-width: 100%;
-  width: 35%;
-  border-radius: 8px;
-  border: 1px solid #facc15;
-} */
+
+
