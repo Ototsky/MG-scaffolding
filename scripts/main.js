@@ -26,3 +26,17 @@ phoneMenuBtns.forEach((btn) => {
     overlay.classList.remove("active");
   });
 });
+
+document.querySelectorAll('.toggle-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.card');
+    card.classList.toggle('active');
+
+    if (button.textContent === 'More Info') {
+      button.textContent = 'Less Info';
+    } else {
+      button.textContent = 'More Info';
+    }
+  });
+});
+
