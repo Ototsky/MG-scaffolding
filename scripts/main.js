@@ -48,7 +48,8 @@ languageSwitchBtn.addEventListener('click', function() {
 
   if (isEnglish) {
     // Hero Section
-    document.querySelector('h1').innerHTML = 'Scaffolding Solutions You Can Trust,<br>from Ground to Sky.';
+    document.querySelector('h1 > span:nth-child(1)').innerHTML = 'Scaffolding Solutions You Can Trust,';
+    document.querySelector('h1 > span:nth-child(2)').innerHTML = 'from Ground to Sky.';
     // About Us Section
     document.querySelector('#about h2').innerText = 'About Us';
     document.querySelector('#about p').innerText = 'Based in Italy, we are a scaffolding company committed to providing high-quality, safe, and innovative scaffolding solutions for both commercial and industrial projects.';
@@ -86,7 +87,8 @@ languageSwitchBtn.addEventListener('click', function() {
 
   } else {
     // Hero Section
-    document.querySelector('h1').innerHTML = 'Soluzioni di Ponteggi di Fiducia,<br>dal Suolo al Cielo.';
+    document.querySelector('h1 > span:nth-child(1)').innerHTML = 'Soluzioni di Ponteggi di Fiducia';
+    document.querySelector('h1 > span:nth-child(2)').innerHTML = 'dal Suolo al Cielo.';
     // About Us Section
     document.querySelector('#about h2').innerText = 'Chi Siamo';
     document.querySelector('#about p').innerText = 'Siamo un\'azienda italiana specializzata nella fornitura di soluzioni di ponteggi sicuri e innovativi per progetti commerciali e industriali.';
