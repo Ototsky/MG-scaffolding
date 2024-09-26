@@ -362,4 +362,7 @@ h3 {
 }
 
 
-
+#language-switch {
+  z-index: 1000; /* Ensures it stays on top */
+  cursor: pointer;
+}
